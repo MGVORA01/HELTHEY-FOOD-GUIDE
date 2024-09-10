@@ -1,0 +1,348 @@
+ /* ======= Navigation Styles ======= */
+   .nevigation {
+    height: 110px;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    background-color: aliceblue; /* Light blue background for the navigation bar */
+}
+
+.nev-1 {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.nevigation img {
+    height: 110px;
+    margin: 2px 2px; /* Adjusted margins for spacing around images */
+}
+
+.nev-1 a {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    list-style: none;
+    margin: 25px; /* Space between links */
+    font-size: 20px;
+    font-weight: 500;
+    text-transform: uppercase;
+    cursor: pointer; /* Indicates that links are clickable */
+}
+
+.nev-2 i {
+    margin-right: 30px; /* Space to the right of the icon */
+    font-size: 30px; /* Size of icons in the navigation */
+    font-weight: 500;
+    cursor: pointer;
+}
+
+/* Select dropdown styles */
+select {
+    padding: 10px; /* Padding inside the dropdown */
+    margin-right: 20px; /* Space to the right of the dropdown */
+    font-size: 16px;
+    border: 2px solid; /* Border to make the dropdown stand out */
+}
+
+.image-container img {
+    width: 100%;
+    height: auto;
+    display: block;
+}
+
+.overlay-content {
+    position: absolute;
+    top: 50%;
+    left: 20%;
+    transform: translate(-50%, -50%);
+    color:black;
+    text-align: center;
+    padding: 20px;
+    /* border-radius: 10px; */
+}
+
+
+.overlay-content h2 {
+    margin: 10px;
+    font-size: 50px;
+    letter-spacing: 5px;
+}
+
+.overlay-content p {
+    margin: 0 0 10px;
+    font-size: 25px;
+}
+
+/* Main about container styling */
+.about-container {
+    background-color: #f5f5f5; 
+    padding: 50px 20px;
+    margin-top: 20px;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+/* Heading style */
+.about-container h1 {
+    text-align: center;
+    font-size: 2.5rem;
+    color: #333;
+    margin-bottom: 40px;
+}
+
+/* Grid container for the boxes */
+.grid-container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    gap: 20px; /* Space between the boxes */
+}
+
+/* Box styling */
+.grid-container .box {
+    flex: 1 1 calc(33.333% - 20px); /* Three boxes per row */
+    background-color: #ffffff;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s ease, background-color 0.3s ease;
+    box-sizing: border-box; /* Ensures padding and border are included in width/height */
+}
+
+/* Heading within the box */
+.grid-container .box h3 {
+    font-size: 1.5rem;
+    color: #4caf50;
+    margin-bottom: 10px;
+}
+
+/* Text within the box */
+.grid-container .box p {
+    font-size: 1rem;
+    color: #666;
+    line-height: 1.6;
+}
+
+/* Hover effect for each box */
+.grid-container .box:hover {
+    transform: translateY(-5px);
+    background-color: #e0f7fa;
+    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.15);
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+    .grid-container .box {
+        flex: 1 1 calc(50% - 20px); /* Two boxes per row on smaller screens */
+    }
+}
+
+@media (max-width: 480px) {
+    .grid-container .box {
+        flex: 1 1 100%; /* One box per row on very small screens */
+    }
+}
+
+/* Recipes Section */
+.recipes-section {
+    padding: 50px 20px;
+    background-color: #f9f9f9;
+    text-align: center;
+}
+
+.recipes-section h2 {
+    font-size: 2.5rem;
+    margin-bottom: 40px;
+    color: #333;
+}
+
+.recipe-grid {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 20px;
+}
+
+.recipe-category {
+    position: relative;
+    width: 250px; /* Fixed width */
+    height: 250px; /* Fixed height */
+    overflow: hidden;
+    border-radius: 8px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s ease;
+    background-color: #fff; /* Background color for consistency */
+}
+
+.recipe-category img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    transition: transform 0.3s ease;
+}
+
+.recipe-category .overlay {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.5);
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    color: #fff;
+    opacity: 0;
+    transition: opacity 0.3s ease;
+}
+
+.recipe-category:hover {
+    transform: translateY(-5px);
+}
+
+.recipe-category:hover img {
+    transform: scale(1.1);
+}
+
+.recipe-category:hover .overlay {
+    opacity: 1;
+}
+
+.recipe-category h3 {
+    font-size: 1.5rem;
+    margin-bottom: 10px;
+}
+
+.recipe-category p {
+    font-size: 1rem;
+}
+
+.recipe-category a {
+    color: #fff;
+    text-decoration: underline;
+}
+
+
+.how-it-works {
+    padding: 50px 20px;
+    text-align: center;
+    background-color: #f9f9f9;
+}
+
+.how-it-works h2 {
+    font-size: 2.5rem;
+    margin-bottom: 40px;
+    color: #333;
+}
+
+.steps {
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+}
+
+.step {
+    flex: 1;
+    max-width: 300px;
+    margin: 20px;
+    text-align: center;
+}
+
+.step img {
+    width: 80px;
+    height: 80px;
+    margin-bottom: 20px;
+}
+
+.step h3 {
+    font-size: 1.5rem;
+    margin-bottom: 15px;
+    color: #555;
+}
+
+.step p {
+    font-size: 1rem;
+    color: #777;
+    line-height: 1.6;
+}
+
+/* //footer// */
+.footer {
+    background-color: #333;
+    color: #fff;
+    padding: 50px 20px;
+}
+
+.footer-container {
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+    margin-bottom: 20px;
+}
+
+.footer h3 {
+    font-size: 1.5rem;
+    margin-bottom: 20px;
+}
+
+.footer p {
+    font-size: 1rem;
+    line-height: 1.6;
+}
+
+.footer-about {
+    max-width: 300px;
+    margin-bottom: 30px;
+}
+
+.footer-links ul {
+    list-style-type: none;
+    padding: 0;
+}
+
+.footer-links ul li {
+    margin-bottom: 10px;
+}
+
+.footer-links ul li a {
+    color: #fff;
+    text-decoration: none;
+    font-size: 1rem;
+    transition: color 0.3s ease;
+}
+
+.footer-links ul li a:hover {
+    color: #f9a825;
+}
+
+.footer-contact {
+    max-width: 300px;
+    margin-bottom: 30px;
+}
+
+.social-icons a {
+    display: inline-block;
+    margin-right: 10px;
+}
+
+.social-icons img {
+    width: 32px;
+    height: 32px;
+    transition: transform 0.3s ease;
+}
+
+.social-icons a:hover img {
+    transform: scale(1.1);
+}
+
+.footer-bottom {
+    text-align: center;
+    padding: 20px 0;
+    border-top: 1px solid #444;
+    font-size: 0.9rem;
+}
+
+

@@ -1,0 +1,186 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
+
+  body, html {
+    height: 100%;
+    font-family: Arial, sans-serif;
+  }
+
+  .background img { /* Replace with your image path */
+    width: 100%;
+    height: auto;
+    /* padding-left: 100px; */
+    /* padding-right: 100px; */
+
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    position: relative;
+  }
+
+  .form-container {
+    position: absolute;
+    top: 110%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    background-color: rgba(255, 255, 255,1);
+    padding-top: 50px;
+    padding-bottom: 50px;
+    padding-left: 50px;
+    padding-right: 50px;
+    border-radius: 10px;
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.2);
+  }
+
+  .form-container h2 {
+    text-align: center;
+    margin-bottom: 20px;
+  }
+
+  .form-container input,
+  .form-container textarea,
+  .form-container button {
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 15px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+  }
+
+  .form-container button {
+    background-color: #ff5722;
+    color: white;
+    border: none;
+    cursor: pointer;
+  }
+
+  .form-container button:hover {
+    background-color: #e64a19;
+  }
+
+     /* ======= Navigation Styles ======= */
+     .nevigation {
+        height: 110px;
+        width: 100%;
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        background-color: aliceblue; /* Light blue background for the navigation bar */
+    }
+
+    .nev-1 {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+
+    .nevigation img {
+        height: 110px;
+        margin: 2px 2px; /* Adjusted margins for spacing around images */
+    }
+
+    .nev-1 a {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        list-style: none;
+        margin: 25px; /* Space between links */
+        font-size: 20px;
+        font-weight: 500;
+        text-transform: uppercase;
+        cursor: pointer; /* Indicates that links are clickable */
+    }
+
+    .nev-2 i {
+        margin-right: 30px; /* Space to the right of the icon */
+        font-size: 30px; /* Size of icons in the navigation */
+        font-weight: 500;
+        cursor: pointer;
+    }
+
+    /* Select dropdown styles */
+    select {
+        padding: 10px; /* Padding inside the dropdown */
+        margin-right: 20px; /* Space to the right of the dropdown */
+        font-size: 16px;
+        border: 2px solid; /* Border to make the dropdown stand out */
+    }
+
+
+    .footer {
+        background-color: #333; /* Dark background for footer */
+        color: #fff; /* White text for contrast */
+        padding: 50px 20px; /* Padding around footer content */
+    }
+
+    .footer-container {
+        display: flex;
+        justify-content: space-around; /* Evenly space footer sections */
+        flex-wrap: wrap; /* Wrap content on smaller screens */
+        margin-bottom: 20px; /* Space at the bottom of the container */
+    }
+
+    .footer h3 {
+        font-size: 1.5rem; /* Font size for footer headings */
+        margin-bottom: 20px; /* Space below headings */
+    }
+
+    .footer p {
+        font-size: 1rem; /* Font size for footer text */
+        line-height: 1.6; /* Line height for readability */
+    }
+
+    .footer-about {
+        max-width: 300px; /* Maximum width for the about section */
+        margin-bottom: 30px; /* Space below the section */
+    }
+
+    .footer-links ul {
+        list-style-type: none; /* Removes bullets */
+        padding: 0; /* Removes padding */
+    }
+
+    .footer-links ul li {
+        margin-bottom: 10px; /* Space between list items */
+    }
+
+    .footer-links ul li a {
+        color: #fff; /* White text for links */
+        text-decoration: none; /* Removes underline */
+        font-size: 1rem; /* Font size for links */
+        transition: color 0.3s ease; /* Smooth color transition */
+    }
+
+    .footer-links ul li a:hover {
+        color: #f9a825; /* Yellow color on hover */
+    }
+
+    .footer-contact {
+        max-width: 300px; /* Maximum width for the contact section */
+        margin-bottom: 30px; /* Space below the section */
+    }
+
+    .social-icons a {
+        display: inline-block; /* Inline block for spacing */
+        margin-right: 10px; /* Space between social icons */
+    }
+
+    .social-icons img {
+        width: 32px; /* Size of social icons */
+        height: 32px; /* Size of social icons */
+        transition: transform 0.3s ease; /* Smooth scaling effect */
+    }
+
+    .social-icons a:hover img {
+        transform: scale(1.1); /* Slightly increase size on hover */
+    }
+
+    .footer-bottom {
+        text-align: center; /* Center text in footer bottom */
+        padding: 20px 0; /* Padding around text */
+        border-top: 1px solid #444; /* Top border for separation */
+        font-size: 0.9rem; /* Font size for footer bottom text */
+    }

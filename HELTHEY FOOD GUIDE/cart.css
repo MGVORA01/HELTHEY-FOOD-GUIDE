@@ -1,0 +1,240 @@
+   /* ======= Navigation Styles ======= */
+   .nevigation {
+    height: 110px;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    background-color: aliceblue; /* Light blue background for the navigation bar */
+}
+
+.nev-1 {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.nevigation img {
+    height: 110px;
+    margin: 2px 2px; /* Adjusted margins for spacing around images */
+}
+
+.nev-1 a {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    list-style: none;
+    margin: 25px; /* Space between links */
+    font-size: 20px;
+    font-weight: 500;
+    text-transform: uppercase;
+    cursor: pointer; /* Indicates that links are clickable */
+}
+
+.nev-2 i {
+    margin-right: 30px; /* Space to the right of the icon */
+    font-size: 30px; /* Size of icons in the navigation */
+    font-weight: 500;
+    cursor: pointer;
+}
+
+/* Select dropdown styles */
+select {
+    padding: 10px; /* Padding inside the dropdown */
+    margin-right: 20px; /* Space to the right of the dropdown */
+    font-size: 16px;
+    border: 2px solid; /* Border to make the dropdown stand out */
+}
+
+ /* ======= Footer Styles ======= */
+ .footer {
+    background-color: #333; /* Dark background for footer */
+    color: #fff; /* White text for contrast */
+    padding: 50px 20px; /* Padding around footer content */
+}
+
+.footer-container {
+    display: flex;
+    justify-content: space-around; /* Evenly space footer sections */
+    flex-wrap: wrap; /* Wrap content on smaller screens */
+    margin-bottom: 20px; /* Space at the bottom of the container */
+}
+
+.footer h3 {
+    font-size: 1.5rem; /* Font size for footer headings */
+    margin-bottom: 20px; /* Space below headings */
+}
+
+.footer p {
+    font-size: 1rem; /* Font size for footer text */
+    line-height: 1.6; /* Line height for readability */
+}
+
+.footer-about {
+    max-width: 300px; /* Maximum width for the about section */
+    margin-bottom: 30px; /* Space below the section */
+}
+
+.footer-links ul {
+    list-style-type: none; /* Removes bullets */
+    padding: 0; /* Removes padding */
+}
+
+.footer-links ul li {
+    margin-bottom: 10px; /* Space between list items */
+}
+
+.footer-links ul li a {
+    color: #fff; /* White text for links */
+    text-decoration: none; /* Removes underline */
+    font-size: 1rem; /* Font size for links */
+    transition: color 0.3s ease; /* Smooth color transition */
+}
+
+.footer-links ul li a:hover {
+    color: #f9a825; /* Yellow color on hover */
+}
+
+.footer-contact {
+    max-width: 300px; /* Maximum width for the contact section */
+    margin-bottom: 30px; /* Space below the section */
+}
+
+.social-icons a {
+    display: inline-block; /* Inline block for spacing */
+    margin-right: 10px; /* Space between social icons */
+}
+
+.social-icons img {
+    width: 32px; /* Size of social icons */
+    height: 32px; /* Size of social icons */
+    transition: transform 0.3s ease; /* Smooth scaling effect */
+}
+
+.social-icons a:hover img {
+    transform: scale(1.1); /* Slightly increase size on hover */
+}
+
+.footer-bottom {
+    text-align: center; /* Center text in footer bottom */
+    padding: 20px 0; /* Padding around text */
+    border-top: 1px solid #444; /* Top border for separation */
+    font-size: 0.9rem; /* Font size for footer bottom text */
+}
+
+
+.cart {
+    max-width: 800px;
+    margin: 50px auto;
+    background-color: #fff;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    padding: 20px;
+}
+
+/* Cart header */
+.cart h2 {
+    text-align: center;
+    margin-bottom: 20px;
+    color: #2c3e50;
+}
+
+/* Cart items list */
+#cart-items {
+    list-style-type: none;
+    padding: 0;
+    margin: 0;
+}
+
+/* Individual cart item */
+#cart-items li {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 15px;
+    border-bottom: 1px solid #ddd;
+}
+
+/* Style for the last item in the list */
+#cart-items li:last-child {
+    border-bottom: none;
+}
+
+/* Cart item image */
+#cart-items li img {
+    width: 80px;
+    height: 80px;
+    border-radius: 8px;
+    margin-right: 15px;
+}
+
+/* Cart item details */
+#cart-items li .item-details {
+    flex-grow: 1;
+    display: flex;
+    flex-direction: column;
+}
+
+/* Cart item name */
+#cart-items li .item-details strong {
+    font-size: 18px;
+    color: #34495e;
+}
+
+/* Cart item description */
+#cart-items li .item-details p {
+    margin: 5px 0;
+    color: #7f8c8d;
+}
+
+/* Cart item price */
+#cart-items li .item-details .price {
+    font-weight: bold;
+    color: #e74c3c;
+}
+
+/* Link to go back to the menu */
+.cart a {
+    display: block;
+    text-align: center;
+    margin-top: 20px;
+    color: #3498db;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+.cart a:hover {
+    color: #2980b9;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f4f4f4;
+    margin: 0;
+    padding: 20px;
+    color: #333;
+}
+
+.remove-btn {
+    background-color: #007bff; /* Blue background color for the button */
+    color: #fff; /* White text on the button */
+    border: none; /* Removes border */
+    padding: 10px 20px; /* Padding inside the button */
+    cursor: pointer; /* Indicates button is clickable */
+    border-radius: 5px; /* Rounded corners */
+    margin: 10px 0; /* Space above and below the button */
+    align-self: center; /* Center the button horizontally */
+}
+
+.remove-btn:hover {
+    background-color: #01b4fb;
+}
+
+#total-amount-container {
+    margin-top: 20px;
+    text-align: right;
+    font-size: 1.2em;
+    font-weight: bold;
+}
+
+

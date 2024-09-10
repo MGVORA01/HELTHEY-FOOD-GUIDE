@@ -1,0 +1,148 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Healthy Food Menu for 16-20 Years</title>
+    <link href="https://cdn.jsdelivr.net/npm/remixicon@4.3.0/fonts/remixicon.css" rel="stylesheet"/>
+    <link rel="stylesheet" href="agepage.css">
+    <header>
+        <div class="main">
+            <div class="nevigation">
+                <div class="nev-1">
+                    <img src="photos/logo.jpeg" alt="logo">
+                        <a href="index.html">Home</a>
+                        <a href="aboutus.html">About Us</a> 
+                        <a href="contactus.html">Contact Us</a>
+                    
+                </div>
+                <div class="nev-2">
+                    <select id="ageRange">
+                        <option value="0-5">0-5 years</option>
+                        <option value="6-10">6-10 years</option>
+                        <option value="11-15">11-15 years</option>
+                        <option value="16-20">16-20 years</option>
+                        <option value="21+">21+ years</option>
+                    </select>
+    
+                    <i class="ri-search-line icon" id="searchButton"></i>
+                    <i class="ri-heart-line icon" id="wishlistButton"></i>
+                    <i class="ri-shopping-cart-line icon" id="cartButton"></i>
+                    <i class="ri-menu-line icon"></i>
+                </div>
+            </div>
+        </div>
+    </header>
+</head>
+<body>
+    <div class="menu-title">
+        <h1>MENU FOR AGE: <span>16-20 Years</span></h1>
+    </div>
+
+    <div class="menu">
+        <!-- JavaScript will dynamically insert food items here -->
+    </div>
+
+    <footer class="footer">
+        <div class="footer-container">
+            <div class="footer-about">
+                <h3>About Us</h3>
+                <p>Your go-to guide for healthy living. We provide expert advice, meal plans, and recipes to help you achieve your health goals.</p>
+            </div>
+            <div class="footer-links">
+                <h3>Quick Links</h3>
+                <ul>
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="aboutus.html">About Us</a> </li>
+                    <li><a href="#recipes">Recipes</a></li>
+                    <li><a href="contactus.html">Contact Us</a></li>
+                </ul>
+            </div>
+            <div class="footer-contact">
+                <h3>Contact Us</h3>
+                <p>Email: info@healthyfoodguide.com</p>
+                <p>Phone: +1 (800) 123-4567</p>
+                <div class="social-icons">
+                    <a href="#"><img src="photos/Facebook-logo-modern-paint-splash-social-media-png.png" alt="Facebook"></a>
+                    <a href="#"><img src="photos/twtter.jpg" alt="Twitter"></a>
+                    <a href="#"><img src="photos/Instagram-logo-modern-paint-splash-social-media-png.png" alt="Instagram"></a>
+                </div>
+            </div>
+        </div>
+        <div class="footer-bottom">
+            <p>&copy; 2024 Healthy Food Guide. All rights reserved.</p>
+        </div>
+    </footer>
+
+<script>
+    // JavaScript code to dynamically create healthy food items for 6-10 years age group
+    const healthyFoodItems = [
+    {
+        name: "Protein-Packed Trail Mix",
+        price: "₹40.00",
+        image: "images/16-20/protein-trail-mix.jpg",
+        description: "A mix of nuts, seeds, and dried fruits enhanced with protein-rich ingredients like roasted chickpeas, perfect for energy and muscle recovery."
+    },
+    {
+        name: "Spinach and Feta Quesadilla",
+        price: "₹50.00",
+        image: "images/16-20/spinach-feta-quesadilla.jpg",
+        description: "Whole grain tortilla stuffed with fresh spinach and crumbled feta cheese, offering a flavorful and nutrient-dense meal."
+    },
+    {
+        name: "Chicken and Avocado Wrap",
+        price: "₹55.00",
+        image: "images/16-20/chicken-avocado-wrap.jpg",
+        description: "Grilled chicken breast paired with creamy avocado slices in a whole wheat wrap, ideal for a protein-packed lunch."
+    },
+    {
+        name: "Overnight Oats with Almonds and Berries",
+        price: "₹45.00",
+        image: "images/16-20/overnight-oats.jpg",
+        description: "Nutritious oats soaked overnight and topped with almonds and fresh berries, providing a quick and healthy breakfast option."
+    },
+    {
+        name: "Edamame and Quinoa Bowl",
+        price: "₹50.00",
+        image: "images/16-20/edamame-quinoa-bowl.jpg",
+        description: "A protein-rich bowl featuring quinoa, steamed edamame, and a light dressing, perfect for a post-workout meal."
+    },
+    {
+        name: "Greek Yogurt with Honey and Nuts",
+        price: "₹30.00",
+        image: "images/16-20/greek-yogurt-honey-nuts.jpg",
+        description: "Creamy Greek yogurt drizzled with honey and topped with a mix of nuts, combining protein and healthy fats for a satisfying snack."
+    },
+    {
+        name: "Baked Zucchini Fries",
+        price: "₹35.00",
+        image: "images/16-20/baked-zucchini-fries.jpg",
+        description: "Lightly seasoned and baked zucchini fries, offering a low-calorie and nutrient-rich alternative to regular fries."
+    },
+    {
+        name: "Grilled Salmon Salad",
+        price: "₹65.00",
+        image: "images/16-20/grilled-salmon-salad.jpg",
+        description: "A fresh salad featuring grilled salmon, mixed greens, and a citrus vinaigrette, providing omega-3s and antioxidants for overall health."
+    },
+    {
+        name: "Energy-Boosting Granola Bars",
+        price: "₹40.00",
+        image: "images/16-20/energy-granola-bars.jpg",
+        description: "Homemade granola bars packed with oats, nuts, and dried fruits, perfect for a quick energy boost during busy days."
+    },
+    {
+        name: "Berry and Banana Smoothie",
+        price: "₹35.00",
+        image: "images/16-20/berry-banana-smoothie.jpg",
+        description: "A delicious smoothie made with fresh berries and banana, providing a refreshing and vitamin-rich drink to start the day."
+    }
+];
+</script>
+
+<script src="menucard.js"></script>
+<script src="myScript.js"></script>
+
+
+</body>
+</html>

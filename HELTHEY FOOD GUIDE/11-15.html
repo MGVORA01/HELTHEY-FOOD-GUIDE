@@ -1,0 +1,148 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Healthy Food Menu for 11-15 Years</title>
+    <link href="https://cdn.jsdelivr.net/npm/remixicon@4.3.0/fonts/remixicon.css" rel="stylesheet"/>
+    <link rel="stylesheet" href="agepage.css">
+    <header>
+        <div class="main">
+            <div class="nevigation">
+                <div class="nev-1">
+                    <img src="photos/logo.jpeg" alt="logo">
+                        <a href="index.html">Home</a>
+                        <a href="aboutus.html">About Us</a> 
+                        <a href="contactus.html">Contact Us</a>
+                    
+                </div>
+                <div class="nev-2">
+                    <select id="ageRange">
+                        <option value="0-5">0-5 years</option>
+                        <option value="6-10">6-10 years</option>
+                        <option value="11-15">11-15 years</option>
+                        <option value="16-20">16-20 years</option>
+                        <option value="21+">21+ years</option>
+                    </select>
+    
+                    <i class="ri-search-line icon" id="searchButton"></i>
+                    <i class="ri-heart-line icon" id="wishlistButton"></i>
+                    <i class="ri-shopping-cart-line icon" id="cartButton"></i>
+                    <i class="ri-menu-line icon"></i>
+                </div>
+            </div>
+        </div>
+    </header>
+</head>
+<body>
+    <div class="menu-title">
+        <h1>MENU FOR AGE: <span>11-15 Years</span></h1>
+    </div>
+
+    <div class="menu">
+        <!-- JavaScript will dynamically insert food items here -->
+    </div>
+
+    <footer class="footer">
+        <div class="footer-container">
+            <div class="footer-about">
+                <h3>About Us</h3>
+                <p>Your go-to guide for healthy living. We provide expert advice, meal plans, and recipes to help you achieve your health goals.</p>
+            </div>
+            <div class="footer-links">
+                <h3>Quick Links</h3>
+                <ul>
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="aboutus.html">About Us</a> </li>
+                    <li><a href="#recipes">Recipes</a></li>
+                    <li><a href="contactus.html">Contact Us</a></li>
+                </ul>
+            </div>
+            <div class="footer-contact">
+                <h3>Contact Us</h3>
+                <p>Email: info@healthyfoodguide.com</p>
+                <p>Phone: +1 (800) 123-4567</p>
+                <div class="social-icons">
+                    <a href="#"><img src="photos/Facebook-logo-modern-paint-splash-social-media-png.png" alt="Facebook"></a>
+                    <a href="#"><img src="photos/twtter.jpg" alt="Twitter"></a>
+                    <a href="#"><img src="photos/Instagram-logo-modern-paint-splash-social-media-png.png" alt="Instagram"></a>
+                </div>
+            </div>
+        </div>
+        <div class="footer-bottom">
+            <p>&copy; 2024 Healthy Food Guide. All rights reserved.</p>
+        </div>
+    </footer>
+
+<script>
+    // JavaScript code to dynamically create healthy food items for 6-10 years age group
+    const healthyFoodItems = [
+    {
+        name: "Trail Mix Delight",
+        price: "₹30.00",
+        image: "images/11-15/trail-mix-delight.jpg",
+        description: "A crunchy mix of nuts, seeds, and dried fruits, providing a great source of energy and essential nutrients for active teens."
+    },
+    {
+        name: "Veggie and Cheese Quesadilla",
+        price: "₹35.00",
+        image: "images/11-15/veggie-cheese-quesadilla.jpg",
+        description: "Whole grain tortilla filled with melted cheese and fresh vegetables, a tasty and balanced meal option that's easy to prepare."
+    },
+    {
+        name: "Turkey and Cheese Roll-Ups",
+        price: "₹25.00",
+        image: "images/11-15/turkey-cheese-rollups.jpg",
+        description: "Lean turkey slices rolled up with cheese and veggies, perfect for a protein-packed snack or light lunch."
+    },
+    {
+        name: "Whole Grain Pancakes with Fruit Topping",
+        price: "₹40.00",
+        image: "images/11-15/whole-grain-pancakes.jpg",
+        description: "Fluffy whole grain pancakes served with a variety of fresh fruit toppings, offering a delicious and fiber-rich breakfast."
+    },
+    {
+        name: "Steamed Edamame",
+        price: "₹20.00",
+        image: "images/11-15/steamed-edamame.jpg",
+        description: "Lightly steamed edamame pods, a great source of plant-based protein and fiber, perfect for a healthy snack."
+    },
+    {
+        name: "Cottage Cheese with Pineapple",
+        price: "₹25.00",
+        image: "images/11-15/cottage-cheese-pineapple.jpg",
+        description: "Creamy cottage cheese paired with sweet pineapple chunks, combining protein and vitamins for a satisfying treat."
+    },
+    {
+        name: "Baked Sweet Potato Fries",
+        price: "₹30.00",
+        image: "images/11-15/baked-sweet-potato-fries.jpg",
+        description: "Crispy baked sweet potato fries seasoned to perfection, offering a tasty alternative to regular fries with added nutrients."
+    },
+    {
+        name: "Quinoa and Veggie Salad",
+        price: "₹45.00",
+        image: "images/11-15/quinoa-veggie-salad.jpg",
+        description: "A hearty salad of quinoa mixed with fresh vegetables and a light dressing, providing a complete and nutritious meal."
+    },
+    {
+        name: "Homemade Granola Bars",
+        price: "₹35.00",
+        image: "images/11-15/homemade-granola-bars.jpg",
+        description: "Crunchy and chewy granola bars made with oats, nuts, and honey, perfect for a convenient and healthy on-the-go snack."
+    },
+    {
+        name: "Fresh Fruit Kebabs",
+        price: "₹25.00",
+        image: "images/11-15/fresh-fruit-kebabs.jpg",
+        description: "Colorful skewers of assorted fresh fruits, making a fun and nutritious snack that's both appealing and delicious."
+    }
+];
+</script>
+
+<script src="menucard.js"></script>
+<script src="myScript.js"></script>
+
+
+</body>
+</html>

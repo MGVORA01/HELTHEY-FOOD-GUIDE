@@ -1,0 +1,148 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Healthy Food Menu for 6-10 Years</title>
+    <link href="https://cdn.jsdelivr.net/npm/remixicon@4.3.0/fonts/remixicon.css" rel="stylesheet"/>
+    <link rel="stylesheet" href="agepage.css">
+    <header>
+        <div class="main">
+            <div class="nevigation">
+                <div class="nev-1">
+                    <img src="photos/logo.jpeg" alt="logo">
+                        <a href="index.html">Home</a>
+                        <a href="aboutus.html">About Us</a> 
+                        <a href="contactus.html">Contact Us</a>
+                    
+                </div>
+                <div class="nev-2">
+                    <select id="ageRange">
+                        <option value="0-5">0-5 years</option>
+                        <option value="6-10">6-10 years</option>
+                        <option value="11-15">11-15 years</option>
+                        <option value="16-20">16-20 years</option>
+                        <option value="21+">21+ years</option>
+                    </select>
+    
+                    <i class="ri-search-line icon" id="searchButton"></i>
+                    <i class="ri-heart-line icon" id="wishlistButton"></i>
+                    <i class="ri-shopping-cart-line icon" id="cartButton"></i>
+                    <i class="ri-menu-line icon"></i>
+                </div>
+            </div>
+        </div>
+    </header>
+</head>
+<body>
+    <div class="menu-title">
+        <h1>MENU FOR AGE: <span>6-10 Years</span></h1>
+    </div>
+
+    <div class="menu">
+        <!-- JavaScript will dynamically insert food items here -->
+    </div>
+
+    <footer class="footer">
+        <div class="footer-container">
+            <div class="footer-about">
+                <h3>About Us</h3>
+                <p>Your go-to guide for healthy living. We provide expert advice, meal plans, and recipes to help you achieve your health goals.</p>
+            </div>
+            <div class="footer-links">
+                <h3>Quick Links</h3>
+                <ul>
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="aboutus.html">About Us</a> </li>
+                    <li><a href="#recipes">Recipes</a></li>
+                    <li><a href="contactus.html">Contact Us</a></li>
+                </ul>
+            </div>
+            <div class="footer-contact">
+                <h3>Contact Us</h3>
+                <p>Email: info@healthyfoodguide.com</p>
+                <p>Phone: +1 (800) 123-4567</p>
+                <div class="social-icons">
+                    <a href="#"><img src="photos/Facebook-logo-modern-paint-splash-social-media-png.png" alt="Facebook"></a>
+                    <a href="#"><img src="photos/twtter.jpg" alt="Twitter"></a>
+                    <a href="#"><img src="photos/Instagram-logo-modern-paint-splash-social-media-png.png" alt="Instagram"></a>
+                </div>
+            </div>
+        </div>
+        <div class="footer-bottom">
+            <p>&copy; 2024 Healthy Food Guide. All rights reserved.</p>
+        </div>
+    </footer>
+
+<script>
+    // JavaScript code to dynamically create healthy food items for 6-10 years age group
+    const healthyFoodItems = [
+    {
+        name: "Apple Slices with Peanut Butter",
+        price: "₹25.00",
+        image: "images/6-10/apple-peanut-butter.jpg",
+        description: "Fresh apple slices served with creamy peanut butter, a perfect snack packed with protein and fiber."
+    },
+    {
+        name: "Carrot and Cucumber Sticks",
+        price: "₹20.00",
+        image: "images/6-10/Carrot and Cucumber Sticks.jpg",
+        description: "Crunchy carrot and cucumber sticks, ideal for dipping or as a light snack."
+    },
+    {
+        name: "Oatmeal with Berries",
+        price: "₹35.00",
+        image: "images/6-10/oatmeal-berries.jpg",
+        description: "Warm oatmeal topped with a variety of fresh berries, providing a nutritious start to your day."
+    },
+    {
+        name: "Greek Yogurt Parfait",
+        price: "₹40.00",
+        image: "images/6-10/greek-yogurt-parfait.jpg",
+        description: "Layers of Greek yogurt, granola, and mixed berries, a delightful and healthy treat."
+    },
+    {
+        name: "Whole Wheat Pasta Salad",
+        price: "₹45.00",
+        image: "images/6-10/whole-wheat-pasta-salad.jpg",
+        description: "Whole wheat pasta mixed with fresh vegetables and a light vinaigrette, a perfect lunch option."
+    },
+    {
+        name: "Grilled Chicken with Veggies",
+        price: "₹50.00",
+        image: "images/6-10/grilled-chicken-veggies.jpg",
+        description: "Grilled chicken breast served with a side of steamed vegetables, rich in protein and vitamins."
+    },
+    {
+        name: "Avocado Toast",
+        price: "₹30.00",
+        image: "images/6-10/avocado-toast.jpg",
+        description: "Toasted whole grain bread topped with fresh avocado slices, a popular and healthy choice."
+    },
+    {
+        name: "Fruit Smoothie",
+        price: "₹35.00",
+        image: "images/6-10/fruit-smoothie.jpg",
+        description: "A refreshing blend of seasonal fruits, perfect for a nutritious drink on the go."
+    },
+    {
+        name: "Hummus with Veggie Sticks",
+        price: "₹20.00",
+        image: "images/6-10/hummus-veggie-sticks.jpg",
+        description: "Creamy hummus served with a variety of fresh vegetable sticks, a great source of fiber and protein."
+    },
+    {
+        name: "Banana and Nut Butter Wrap",
+        price: "₹25.00",
+        image: "images/6-10/banana-nut-butter-wrap.jpg",
+        description: "A whole wheat wrap filled with banana and nut butter, a quick and satisfying snack."
+    }
+];
+</script>
+
+<script src="menucard.js"></script>
+<script src="myScript.js"></script>
+
+
+</body>
+</html>

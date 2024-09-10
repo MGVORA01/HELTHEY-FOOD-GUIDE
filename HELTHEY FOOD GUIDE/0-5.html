@@ -1,0 +1,174 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Healthy Food Menu for 0-5 Years</title>
+    <link href="https://cdn.jsdelivr.net/npm/remixicon@4.3.0/fonts/remixicon.css" rel="stylesheet"/>
+    <link rel="stylesheet" href="agepage.css">
+    <header>
+        <div class="main">
+            <div class="nevigation">
+                <div class="nev-1">
+                    <img src="photos/logo.jpeg" alt="logo">
+                        <a href="index.html">Home</a>
+                        <a href="aboutus.html">About Us</a> 
+                        <a href="contactus.html">Contact Us</a>
+                    
+                </div>
+                <div class="nev-2">
+                    <select id="ageRange">
+                        <option value="0-5">0-5 years</option>
+                        <option value="6-10">6-10 years</option>
+                        <option value="11-15">11-15 years</option>
+                        <option value="16-20">16-20 years</option>
+                        <option value="21+">21+ years</option>
+                    </select>
+    
+                    <i class="ri-search-line icon" id="searchButton"></i>
+                    <i class="ri-heart-line icon" id="wishlistButton"></i>
+                    <i class="ri-shopping-cart-line icon" id="cartButton"></i>
+                    <i class="ri-menu-line icon"></i>
+                </div>
+            </div>
+        </div>
+    </header>
+</head>
+<body>
+
+    <div class="menu-title">
+        <h1>MENU FOR AGE: <span>0-5 Years</span></h1>
+    </div>
+
+
+    <div class="menu">
+        <!-- JavaScript will dynamically insert food items here -->
+    </div>
+
+    <footer class="footer">
+        <div class="footer-container">
+            <div class="footer-about">
+                <h3>About Us</h3>
+                <p>Your go-to guide for healthy living. We provide expert advice, meal plans, and recipes to help you achieve your health goals.</p>
+            </div>
+            <div class="footer-links">
+                <h3>Quick Links</h3>
+                <ul>
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="aboutus.html">About Us</a> </li>
+                    <li><a href="#recipes">Recipes</a></li>
+                    <li><a href="contactus.html">Contact Us</a></li>
+                </ul>
+            </div>
+            <div class="footer-contact">
+                <h3>Contact Us</h3>
+                <p>Email: info@healthyfoodguide.com</p>
+                <p>Phone: +1 (800) 123-4567</p>
+                <div class="social-icons">
+                    <a href="#"><img src="photos/Facebook-logo-modern-paint-splash-social-media-png.png" alt="Facebook"></a>
+                    <a href="#"><img src="photos/twtter.jpg" alt="Twitter"></a>
+                    <a href="#"><img src="photos/Instagram-logo-modern-paint-splash-social-media-png.png" alt="Instagram"></a>
+                </div>
+            </div>
+        </div>
+        <div class="footer-bottom">
+            <p>&copy; 2024 Healthy Food Guide. All rights reserved.</p>
+        </div>
+    </footer>
+
+    <script>
+        // JavaScript code to dynamically create healthy food items for 6-10 years age group
+        const healthyFoodItems = [
+        {
+        
+            name: "Baby Porridge", 
+            price: "₹20.00", 
+            image: "images/0-5/1.jpg", 
+            description: "A smooth and creamy blend of oats, perfect for introducing solids to your little one."
+        },
+        {
+            name: "Mashed Vegetables", 
+            price: "₹25.00", 
+            image: "images/0-5/2.jpeg", 
+            description: "A nutritious mash of fresh vegetables, providing essential vitamins and minerals."
+        },
+        {
+            name: "Fruit Puree", 
+            price: "₹30.00", 
+            image: "images/0-5/3.jpg", 
+            description: "A sweet and tangy blend of pureed fruits, rich in natural sugars and vitamins."
+        },
+        {
+            name: "Rice Cereal", 
+            price: "₹18.00", 
+            image: "images/0-5/rice cereal.jpeg", 
+            description: "Light and easy-to-digest rice cereal, a great source of energy for your baby."
+        },
+        {
+            name: "Carrot Soup", 
+            price: "₹22.00", 
+            image: "images/0-5/carrot soup.jpeg", 
+            description: "A warm and comforting carrot soup, packed with beta-carotene and flavor."
+        },
+        {
+            name: "Apple Sauce", 
+            price: "₹15.00", 
+            image: "images/0-5/apple sauce.jpeg", 
+            description: "Naturally sweetened apple sauce, a healthy and delicious snack for any time of the day."
+        },
+        {
+            name: "Banana Mash", 
+            price: "₹20.00", 
+            image: "images/0-5/banana mash.jpg", 
+            description: "Creamy mashed bananas, a potassium-rich treat that’s easy to digest."
+        },
+        {
+            name: "Oatmeal", 
+            price: "₹20.00", 
+            image: "images/0-5/oatmeal.jpeg", 
+            description: "Hearty oatmeal, perfect for a wholesome breakfast and keeping you full throughout the day."
+        },
+        {
+            name: "Sweet Potato Mash", 
+            price: "₹25.00", 
+            image: "images/0-5/sweet potato mash.jpeg", 
+            description: "Smooth and rich sweet potato mash, loaded with vitamins A and C."
+        },
+        {
+            name: "Pea Puree", 
+            price: "₹18.00", 
+            image: "images/0-5/pea puree.jpeg", 
+            description: "Vibrant green pea puree, a delightful and nutritious addition to any meal."
+        },
+        {
+            name: "Spinach Puree", 
+            price: "₹20.00", 
+            image: "images/0-5/spinach puree.jpeg", 
+            description: "Iron-rich spinach puree, perfect for adding a nutritional boost to your diet."
+        },
+        {
+            name: "Pear Puree", 
+            price: "₹20.00", 
+            image: "images/0-5/pear puree.jpeg", 
+            description: "Delicate pear puree, a naturally sweet option for a light and refreshing snack."
+        },
+        {
+            name: "Blueberry Mash", 
+            price: "₹22.00", 
+            image: "images/0-5/bbmash.jpg", 
+            description: "A tangy and antioxidant-rich blueberry mash, perfect for mixing with yogurt or cereal."
+        },
+        {
+        name: "Avocado Mash", 
+        price: "₹28.00", 
+        image: "images/0-5/avocado mash.jpeg", 
+        description: "Creamy avocado mash, packed with healthy fats and ideal for spreading on toast."
+        }
+    ];
+    </script>
+    
+    <script src="menucard.js"></script>
+    <script src="myScript.js"></script>
+
+</body>
+</html>

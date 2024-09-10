@@ -1,0 +1,143 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>LIKE FOODS</title>
+    <link href="https://cdn.jsdelivr.net/npm/remixicon@4.3.0/fonts/remixicon.css" rel="stylesheet"/>
+    <link rel="stylesheet" href="like.css">
+</head>
+<body>
+    <header>
+        <div class="main">
+            <div class="nevigation">
+                <div class="nev-1">
+                    <img src="photos/logo.jpeg" alt="logo">
+                        <a href="index.html">Home</a>
+                        <a href="aboutus.html">About Us</a> 
+                        <a href="contactus.html">Contact Us</a>
+                    
+                </div>
+                <div class="nev-2">
+                    <select id="ageRange">
+                        <option value="0-5">0-5 years</option>
+                        <option value="6-10">6-10 years</option>
+                        <option value="11-15">11-15 years</option>
+                        <option value="16-20">16-20 years</option>
+                        <option value="21+">21+ years</option>
+                    </select>
+    
+                    <i class="ri-search-line icon" id="searchButton"></i>
+                    <i class="ri-heart-line icon" id="wishlistButton"></i>
+                    <i class="ri-shopping-cart-line icon" id="cartButton"></i>
+                    <i class="ri-menu-line icon"></i>
+                </div>
+            </div>
+        </div>
+    </header>
+    
+
+    <div class="like">
+        <h2>Your Liked Items</h2>
+        <ul id="like-items">
+            <!-- Liked items will be populated here by JavaScript -->
+        </ul>
+        <div id="total-Items">
+            <h3>Total Items :<span id="total-liked-items">0.00</span></h3>
+        </div>
+        <a href="index.html">Back to Menu</a>
+    </div>
+    
+
+    
+
+    <footer class="footer">
+        <div class="footer-container">
+            <div class="footer-about">
+                <h3>About Us</h3>
+                <p>Your go-to guide for healthy living. We provide expert advice, meal plans, and recipes to help you achieve your health goals.</p>
+            </div>
+            <div class="footer-links">
+                <h3>Quick Links</h3>
+                <ul>
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="aboutus.html">About Us</a> </li>
+                    <li><a href="#recipes">Recipes</a></li>
+                    <li><a href="contactus.html">Contact Us</a></li>
+                </ul>
+            </div>
+            <div class="footer-contact">
+                <h3>Contact Us</h3>
+                <p>Email: info@healthyfoodguide.com</p>
+                <p>Phone: +1 (800) 123-4567</p>
+                <div class="social-icons">
+                    <a href="#"><img src="photos/Facebook-logo-modern-paint-splash-social-media-png.png" alt="Facebook"></a>
+                    <a href="#"><img src="photos/twtter.jpg" alt="Twitter"></a>
+                    <a href="#"><img src="photos/Instagram-logo-modern-paint-splash-social-media-png.png" alt="Instagram"></a>
+                </div>
+            </div>
+        </div>
+        <div class="footer-bottom">
+            <p>&copy; 2024 Healthy Food Guide. All rights reserved.</p>
+        </div>
+    </footer>
+
+    <script>
+        document.addEventListener('DOMContentLoaded', () => {
+            const likeItemsContainer = document.getElementById('like-items');
+            const totalLikedItemsElement = document.getElementById('total-liked-items');
+
+            // Retrieve liked items from localStorage
+            let likedItems = JSON.parse(localStorage.getItem('like')) || [];
+
+            // Function to render liked items
+            function renderLikedItems() {
+                likeItemsContainer.innerHTML = ''; // Clear existing items
+                let totalLikedItems = 0; // Initialize total liked items count
+
+                likedItems.forEach((item, index) => {
+                    const likedItem = document.createElement('li');
+                    likedItem.innerHTML = `
+                        <img src="${item.image}" alt="${item.name}">
+                        <div class="item-details">
+                            <strong>${item.name}</strong>
+                            <p>${item.description}</p>
+                            <span class="price">${item.price}</span>
+                            <button class="remove-btn" data-index="${index}">Remove</button>
+                        </div>
+                    `;
+                    likeItemsContainer.appendChild(likedItem);
+
+                    // Increase total liked items count
+                    totalLikedItems++;
+                });
+
+                // Update total liked items display
+                if (totalLikedItemsElement) {
+                    totalLikedItemsElement.textContent = totalLikedItems;
+                }
+
+                // Attach event listeners to "Remove" buttons
+                const removeButtons = document.querySelectorAll('.remove-btn');
+                removeButtons.forEach(button => {
+                    button.addEventListener('click', removeLikedItem);
+                });
+            }
+
+            // Function to remove an item from liked items
+            function removeLikedItem(event) {
+                const itemIndex = event.target.getAttribute('data-index');
+                likedItems.splice(itemIndex, 1); // Remove item from liked items array
+                localStorage.setItem('like', JSON.stringify(likedItems)); // Update localStorage
+                renderLikedItems(); // Re-render liked items
+            }
+
+            // Initial render of liked items
+            renderLikedItems();
+        });
+    </script>
+
+    <script src="myScript.js"></script>
+
+</body>
+</html>

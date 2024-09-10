@@ -1,0 +1,341 @@
+
+   /* ======= Navigation Styles ======= */
+   .nevigation {
+    height: 110px;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    background-color: aliceblue; /* Light blue background for the navigation bar */
+}
+
+.nev-1 {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.nevigation img {
+    height: 110px;
+    margin: 2px 2px; /* Adjusted margins for spacing around images */
+}
+
+.nev-1 a {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    list-style: none;
+    margin: 25px; /* Space between links */
+    font-size: 20px;
+    font-weight: 500;
+    text-transform: uppercase;
+    cursor: pointer; /* Indicates that links are clickable */
+}
+
+.nev-2 i {
+    margin-right: 30px; /* Space to the right of the icon */
+    font-size: 30px; /* Size of icons in the navigation */
+    font-weight: 500;
+    cursor: pointer;
+}
+
+/* Select dropdown styles */
+select {
+    padding: 10px; /* Padding inside the dropdown */
+    margin-right: 20px; /* Space to the right of the dropdown */
+    font-size: 16px;
+    border: 2px solid; /* Border to make the dropdown stand out */
+}
+
+
+
+main {
+    padding: 20px;
+}
+
+.about-intro {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 20px;
+    gap: 20px; /* Adds space between the image and the text */
+}
+
+.about-img {
+    flex: 1;
+}
+
+.about-img img {
+    max-width: 100%;
+    height: auto;
+    border-radius: 8px; /* Optional: adds rounded corners to the image */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Optional: adds a subtle shadow */
+}
+
+.about-content {
+    flex: 1.5;
+    padding: 20px;
+}
+
+.about-content h2 {
+    font-size: 2em;
+    margin-bottom: 10px;
+}
+
+.about-content p {
+    font-size: 1.1em;
+    line-height: 1.6;
+    margin-bottom: 15px;
+}
+
+.our-mission {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 20px;
+    gap: 20px; /* Adds space between the image and the text */
+    flex-direction: row-reverse; /* Reverses the order: image on the right, text on the left */
+}
+
+.our-mission-img {
+    flex: 1;
+    text-align: center;
+}
+
+.our-mission-img img {
+    max-width: 100%;
+    height: auto;
+    border-radius: 8px; /* Optional: adds rounded corners to the image */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Optional: adds a subtle shadow */
+}
+
+.our-mission-content {
+    flex: 1;
+    padding: 20px;
+}
+
+.our-mission-content h2 {
+    font-size: 2em;
+    margin-bottom: 10px;
+}
+
+.our-mission-content p {
+    font-size: 1.1em;
+    line-height: 1.6;
+}
+
+.our-values {
+    padding: 20px;
+    background-color: #f9f9f9; /* Optional: Adds a subtle background color */
+    border-radius: 8px; /* Optional: Adds rounded corners */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Optional: Adds a subtle shadow */
+    max-width: 800px;
+    margin: 0 auto; /* Centers the section horizontally */
+}
+
+.our-values h2 {
+    font-size: 2em;
+    margin-bottom: 20px;
+    text-align: center;
+}
+
+.our-values ul {
+    list-style-type: none; /* Removes default bullet points */
+    padding: 0;
+}
+
+.our-values ul li {
+    font-size: 1.1em;
+    line-height: 1.6;
+    margin-bottom: 15px;
+    padding-left: 20px;
+    position: relative;
+}
+
+.our-values ul li::before {
+    content: "\2022"; /* Adds a custom bullet point */
+    color: #ff6f61; /* Custom color for bullet point */
+    font-size: 1.5em;
+    position: absolute;
+    left: 0;
+    top: -2px;
+}
+
+.our-values ul li strong {
+    color: #333;
+}
+
+/* General styling for the team section */
+.our-team {
+    text-align: center;
+    padding: 50px 0px;
+    background-color: #f9f9f9; /* Light background color */
+}
+
+.our-team h2 {
+    font-size: 36px;
+    color: #333;
+    margin-bottom: 30px;
+}
+
+/* Styling for the team members container */
+.team-members {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 200px; /* Space between the team members */
+}
+
+/* Individual team member styling */
+.team-member {
+    background-color: #fff;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Light shadow effect */ 
+    text-align: center;
+    transition: transform 0.3s; /* Smooth scaling effect */
+}
+
+.team-member:hover {
+    transform: scale(1.05); /* Slight zoom on hover */
+}
+
+.team-member img {
+    width: 100px; /* Size of the team member image */
+    height: 100px;
+    border-radius: 50%; /* Makes the image circular */
+    margin-bottom: 15px;
+    object-fit: cover;
+}
+
+.team-member h3 {
+    font-size: 20px;
+    color: #333; /* Margin to separate name and title */
+    text-transform: uppercase; /* Uppercase styling for names */
+    
+    
+}
+
+.team-member p {
+    font-size: 14px;
+    color: #777;
+    margin: 10px;
+}
+
+/* General styling for the 'join-us' section */
+.join-us {
+    background-color: #e0f7fa; /* Light teal background color */
+    text-align: center;
+    padding: 40px 20px; /* Padding for spacing */
+    border-radius: 8px; /* Rounded corners */
+    margin: 30px auto; /* Center alignment with auto margin */
+    max-width: 800px; /* Maximum width to keep the content readable */
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); /* Subtle shadow for depth */
+}
+
+/* Styling for the heading */
+.join-us h2 {
+    font-size: 28px; /* Size of the heading */
+    color: #00796b; /* Dark teal color */
+    margin-bottom: 20px; /* Space below the heading */
+    font-weight: bold; /* Bold text for emphasis */
+}
+
+/* Styling for the paragraph */
+.join-us p {
+    font-size: 16px; /* Size of the paragraph text */
+    color: #555; /* Dark grey color for readability */
+    line-height: 1.6; /* Line height for better readability */
+    margin: 0 0 20px 0; /* Space below the paragraph */
+}
+
+/* Responsive adjustments */
+@media (max-width: 600px) {
+    .join-us {
+        padding: 30px 15px; /* Adjusted padding for smaller screens */
+    }
+
+    .join-us h2 {
+        font-size: 24px; /* Smaller heading size for mobile */
+    }
+
+    .join-us p {
+        font-size: 14px; /* Smaller paragraph text size for mobile */
+    }
+}
+
+/* footer */
+.footer {
+    background-color: #333;
+    color: #fff;
+    padding: 50px 20px;
+}
+
+.footer-container {
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+    margin-bottom: 20px;
+}
+
+.footer h3 {
+    font-size: 1.5rem;
+    margin-bottom: 20px;
+}
+
+.footer p {
+    font-size: 1rem;
+    line-height: 1.6;
+}
+
+.footer-about {
+    max-width: 300px;
+    margin-bottom: 30px;
+}
+
+.footer-links ul {
+    list-style-type: none;
+    padding: 0;
+}
+
+.footer-links ul li {
+    margin-bottom: 10px;
+}
+
+.footer-links ul li a {
+    color: #fff;
+    text-decoration: none;
+    font-size: 1rem;
+    transition: color 0.3s ease;
+}
+
+.footer-links ul li a:hover {
+    color: #f9a825;
+}
+
+.footer-contact {
+    max-width: 300px;
+    margin-bottom: 30px;
+}
+
+.social-icons a {
+    display: inline-block;
+    margin-right: 10px;
+}
+
+.social-icons img {
+    width: 32px;
+    height: 32px;
+    transition: transform 0.3s ease;
+}
+
+.social-icons a:hover img {
+    transform: scale(1.1);
+}
+
+.footer-bottom {
+    text-align: center;
+    padding: 20px 0;
+    border-top: 1px solid #444;
+    font-size: 0.9rem;
+}

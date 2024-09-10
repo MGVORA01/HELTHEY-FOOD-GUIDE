@@ -1,0 +1,147 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Healthy Food Menu for 21+ Years</title>
+    <link href="https://cdn.jsdelivr.net/npm/remixicon@4.3.0/fonts/remixicon.css" rel="stylesheet"/>
+    <link rel="stylesheet" href="agepage.css">
+    <header>
+        <div class="main">
+            <div class="nevigation">
+                <div class="nev-1">
+                    <img src="photos/logo.jpeg" alt="logo">
+                        <a href="index.html">Home</a>
+                        <a href="aboutus.html">About Us</a> 
+                        <a href="contactus.html">Contact Us</a>
+                    
+                </div>
+                <div class="nev-2">
+                    <select id="ageRange">
+                        <option value="0-5">0-5 years</option>
+                        <option value="6-10">6-10 years</option>
+                        <option value="11-15">11-15 years</option>
+                        <option value="16-20">16-20 years</option>
+                        <option value="21+">21+ years</option>
+                    </select>
+    
+                    <i class="ri-search-line icon" id="searchButton"></i>
+                    <i class="ri-heart-line icon" id="wishlistButton"></i>
+                    <i class="ri-shopping-cart-line icon" id="cartButton"></i>
+                    <i class="ri-menu-line icon"></i>
+                </div>
+            </div>
+        </div>
+    </header>
+</head>
+<body>
+    <div class="menu-title">
+        <h1>MENU FOR AGE: <span>21+ Years</span></h1>
+    </div>
+
+    <div class="menu">
+        <!-- JavaScript will dynamically insert food items here -->
+    </div>
+
+    <footer class="footer">
+        <div class="footer-container">
+            <div class="footer-about">
+                <h3>About Us</h3>
+                <p>Your go-to guide for healthy living. We provide expert advice, meal plans, and recipes to help you achieve your health goals.</p>
+            </div>
+            <div class="footer-links">
+                <h3>Quick Links</h3>
+                <ul>
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="aboutus.html">About Us</a> </li>
+                    <li><a href="#recipes">Recipes</a></li>
+                    <li><a href="contactus.html">Contact Us</a></li>
+                </ul>
+            </div>
+            <div class="footer-contact">
+                <h3>Contact Us</h3>
+                <p>Email: info@healthyfoodguide.com</p>
+                <p>Phone: +1 (800) 123-4567</p>
+                <div class="social-icons">
+                    <a href="#"><img src="photos/Facebook-logo-modern-paint-splash-social-media-png.png" alt="Facebook"></a>
+                    <a href="#"><img src="photos/twtter.jpg" alt="Twitter"></a>
+                    <a href="#"><img src="photos/Instagram-logo-modern-paint-splash-social-media-png.png" alt="Instagram"></a>
+                </div>
+            </div>
+        </div>
+        <div class="footer-bottom">
+            <p>&copy; 2024 Healthy Food Guide. All rights reserved.</p>
+        </div>
+    </footer>
+
+    <script>
+        // JavaScript code to dynamically create healthy food items for 6-10 years age group
+        const healthyFoodItems = [
+        {
+            name: "Almond Butter and Banana Toast",
+            price: "₹50.00",
+            image: "images/21+/almond-butter-banana-toast.jpg",
+            description: "Whole grain toast topped with creamy almond butter and banana slices, providing a perfect balance of protein, fiber, and healthy fats."
+        },
+        {
+            name: "Kale and Quinoa Salad",
+            price: "₹60.00",
+            image: "images/21+/kale-quinoa-salad.jpg",
+            description: "A nutrient-rich salad featuring kale, quinoa, cherry tomatoes, and avocado, drizzled with a light lemon vinaigrette."
+        },
+        {
+            name: "Grilled Chicken with Roasted Vegetables",
+            price: "₹75.00",
+            image: "images/21+/grilled-chicken-roasted-vegetables.jpg",
+            description: "Juicy grilled chicken breast served with a side of roasted seasonal vegetables, a perfect high-protein meal."
+        },
+        {
+            name: "Avocado and Poached Egg on Toast",
+            price: "₹55.00",
+            image: "images/21+/avocado-poached-egg-toast.jpg",
+            description: "Whole grain toast topped with creamy avocado and a perfectly poached egg, offering a balanced and satisfying breakfast."
+        },
+        {
+            name: "Salmon and Asparagus",
+            price: "₹85.00",
+            image: "images/21+/salmon-asparagus.jpg",
+            description: "Grilled salmon fillet paired with steamed asparagus, providing a rich source of omega-3 fatty acids and antioxidants."
+        },
+        {
+            name: "Chia Seed Pudding with Berries",
+            price: "₹40.00",
+            image: "images/21+/chia-seed-pudding.jpg",
+            description: "A creamy chia seed pudding topped with fresh berries, offering a delicious and fiber-rich dessert or snack."
+        },
+        {
+            name: "Stuffed Bell Peppers",
+            price: "₹65.00",
+            image: "images/21+/stuffed-bell-peppers.jpg",
+            description: "Bell peppers stuffed with a savory mix of quinoa, black beans, and spices, providing a wholesome and flavorful meal."
+        },
+        {
+            name: "Sautéed Spinach with Garlic",
+            price: "₹30.00",
+            image: "images/21+/sauteed-spinach-garlic.jpg",
+            description: "Fresh spinach sautéed with garlic and olive oil, a simple yet nutrient-dense side dish."
+        },
+        {
+            name: "Berry and Oat Smoothie",
+            price: "₹45.00",
+            image: "images/21+/berry-oat-smoothie.jpg",
+            description: "A smoothie blend of mixed berries, oats, and yogurt, perfect for a filling and nutritious breakfast or snack."
+        },
+        {
+            name: "Roasted Chickpea and Veggie Wrap",
+            price: "₹55.00",
+            image: "images/21+/roasted-chickpea-veggie-wrap.jpg",
+            description: "A whole wheat wrap filled with roasted chickpeas, fresh veggies, and a tahini dressing, offering a satisfying plant-based meal."
+        }
+    ];
+    </script>
+
+    <script src="menucard.js"></script>
+    <script src="myScript.js"></script>
+
+</body>
+</html>

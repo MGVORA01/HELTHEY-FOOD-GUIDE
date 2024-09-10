@@ -1,0 +1,287 @@
+
+               /* ======= Navigation Styles ======= */
+            .nevigation {
+                height: 110px;
+                width: 100%;
+                display: flex;
+                align-items: center;
+                justify-content: space-between;
+                background-color: aliceblue; /* Light blue background for the navigation bar */
+            }
+
+            .nev-1 {
+                display: flex;
+                align-items: center;
+                justify-content: center;
+            }
+
+            .nevigation img {
+                height: 110px;
+                margin: 2px 2px; /* Adjusted margins for spacing around images */
+            }
+
+            .nev-1 a {
+                display: flex;
+                align-items: center;
+                justify-content: center;
+                list-style: none;
+                margin: 25px; /* Space between links */
+                font-size: 20px;
+                font-weight: 500;
+                text-transform: uppercase;
+                cursor: pointer; /* Indicates that links are clickable */
+            }
+
+            .nev-2 i {
+                margin-right: 30px; /* Space to the right of the icon */
+                font-size: 30px; /* Size of icons in the navigation */
+                font-weight: 500;
+                cursor: pointer;
+            }
+
+            /* Select dropdown styles */
+            select {
+                padding: 10px; /* Padding inside the dropdown */
+                margin-right: 20px; /* Space to the right of the dropdown */
+                font-size: 16px;
+                border: 2px solid; /* Border to make the dropdown stand out */
+            }
+
+
+            /* ======= Menu and Food Item Styles ======= */
+            .menu {
+                display: flex;
+                flex-wrap: wrap; /* Allows items to wrap to the next line */
+                gap: 20px; /* Space between menu items */
+                justify-content: center; /* Center-aligns menu items */
+                padding: 20px; /* Padding around the menu */
+            }
+
+            /* Updated food-item styles with flip effect */
+            .food-item {
+                width: 250px; /* Consistent width for all items */
+                border: 1px solid #ddd; /* Light grey border */
+                border-radius: 10px; /* Rounded corners */
+                box-shadow: 0 2px 4px rgba(0,0,0,0.1); /* Subtle shadow for depth */
+                text-align: center;
+                overflow: hidden; /* Ensures no overflow from children elements */
+                display: flex;
+                flex-direction: column; /* Stack content vertically */
+                justify-content: space-between;
+                background-color: #fff; /* White background for contrast */
+                perspective: 1000px; /* Important for 3D effect */
+            }
+
+            /* Container for the flip effect */
+            .food-item .flip-container {
+                width: 100%;
+                height: 150px;
+                position: relative;
+                transform-style: preserve-3d;
+                transition: transform 0.6s;
+            }
+
+            /* Flip the container on hover */
+            .food-item:hover .flip-container {
+                transform: rotateY(180deg);
+            }
+
+            .food-item .flip-container .front, 
+            .food-item .flip-container .back {
+                position: absolute;
+                width: 100%;
+                height: 100%;
+                backface-visibility: hidden; /* Hide the back side when the front is visible */
+                border-radius: 10px; /* Match the border radius */
+            }
+            
+            /* Image styles for the front */
+            .food-item .flip-container .front img {
+                width: 100%; /* Image width matches parent */
+                height: 150px; /* Set height for all images */
+                object-fit: cover; /* Maintains aspect ratio, covers full area */
+            }
+            
+            /* Back side of the card */
+            .food-item .flip-container .back {
+                transform: rotateY(180deg);
+                background-color: rgba(119, 136, 153, 0.1); /* Light grey background for the back */
+                color: #333;
+                display: flex;
+                align-items: center;
+                justify-content: center;
+            }
+            
+            /* Hidden image on the back side */
+            .food-item .flip-container .back img {
+                opacity: 0; /* Fully hidden image on the back side */
+            }
+            
+            /* Centering the icon in the grey background */
+            .food-item .flip-container .details-back {
+                text-align: center;
+                display: flex;
+                align-items: center;
+                justify-content: center;
+                height: 100%; /* Ensure the icon is vertically centered */
+            }
+            
+            /* Style for the icon */
+            .food-item .flip-container .icon {
+                font-size: 48px; /* Adjust the size of the icon */
+                color: #ff6347; /* Adjust the color of the icon */
+            }
+
+
+            .food-item img {
+                width: 100%; /* Image width matches parent */
+                height: 150px; /* Set height for all images */
+                object-fit: cover; /* Maintains aspect ratio, covers full area */
+            }
+
+            .details {
+                padding: 10px; /* Padding inside the details section */
+                flex-grow: 1; /* Allows the content to grow and push the button to the bottom */
+                display: flex;
+                flex-direction: column; /* Align content vertically */
+                justify-content: space-between;
+            }
+
+            .details h3 {
+                font-size: 18px; /* Size for item name */
+                margin: 10px 0; /* Space above and below the heading */
+            }
+
+            .details p {
+                font-size: 14px; /* Size for item description */
+                margin: 10px 0; /* Space above and below the paragraph */
+                color: #555; /* Dark grey text for readability */
+                flex-grow: 1; /* Pushes price and button to the bottom */
+            }
+
+            .details .price {
+                font-size: 16px; /* Size for price text */
+                color: #333; /* Darker text color for emphasis */
+                margin: 10px 0; /* Space above and below the price */
+            }
+
+            .details .add-to-cart {
+                background-color: #007bff; /* Blue background color for the button */
+                color: #fff; /* White text on the button */
+                border: none; /* Removes border */
+                padding: 10px 20px; /* Padding inside the button */
+                cursor: pointer; /* Indicates button is clickable */
+                border-radius: 5px; /* Rounded corners */
+                margin: 10px 0; /* Space above and below the button */
+                align-self: center; /* Center the button horizontally */
+            }
+
+            .details .add-to-cart:hover {
+                background-color: #0056b3; /* Darker blue on hover for effect */
+            }
+
+            /* Specific styles for the heart icon */
+            #like {
+                position: absolute; /* Position relative to parent */
+                top: 15px; /* Adjust distance from the top */
+                right: 15px; /* Adjust distance from the right */
+                font-size: 24px; /* Size of the icon */
+                color: #999; /* Default grey color */
+                cursor: pointer; /* Changes cursor to pointer */
+                transition: color 0.3s; /* Smooth transition for color changes */
+            }
+
+            #like:hover {
+                color: #ff6347; /* Bright red color on hover */
+            }
+
+            /* ======= Footer Styles ======= */
+            .footer {
+                background-color: #333; /* Dark background for footer */
+                color: #fff; /* White text for contrast */
+                padding: 50px 20px; /* Padding around footer content */
+            }
+
+            .footer-container {
+                display: flex;
+                justify-content: space-around; /* Evenly space footer sections */
+                flex-wrap: wrap; /* Wrap content on smaller screens */
+                margin-bottom: 20px; /* Space at the bottom of the container */
+            }
+
+            .footer h3 {
+                font-size: 1.5rem; /* Font size for footer headings */
+                margin-bottom: 20px; /* Space below headings */
+            }
+
+            .footer p {
+                font-size: 1rem; /* Font size for footer text */
+                line-height: 1.6; /* Line height for readability */
+            }
+
+            .footer-about {
+                max-width: 300px; /* Maximum width for the about section */
+                margin-bottom: 30px; /* Space below the section */
+            }
+
+            .footer-links ul {
+                list-style-type: none; /* Removes bullets */
+                padding: 0; /* Removes padding */
+            }
+
+            .footer-links ul li {
+                margin-bottom: 10px; /* Space between list items */
+            }
+
+            .footer-links ul li a {
+                color: #fff; /* White text for links */
+                text-decoration: none; /* Removes underline */
+                font-size: 1rem; /* Font size for links */
+                transition: color 0.3s ease; /* Smooth color transition */
+            }
+
+            .footer-links ul li a:hover {
+                color: #f9a825; /* Yellow color on hover */
+            }
+
+            .footer-contact {
+                max-width: 300px; /* Maximum width for the contact section */
+                margin-bottom: 30px; /* Space below the section */
+            }
+
+            .social-icons a {
+                display: inline-block; /* Inline block for spacing */
+                margin-right: 10px; /* Space between social icons */
+            }
+
+            .social-icons img {
+                width: 32px; /* Size of social icons */
+                height: 32px; /* Size of social icons */
+                transition: transform 0.3s ease; /* Smooth scaling effect */
+            }
+
+            .social-icons a:hover img {
+                transform: scale(1.1); /* Slightly increase size on hover */
+            }
+
+            .footer-bottom {
+                text-align: center; /* Center text in footer bottom */
+                padding: 20px 0; /* Padding around text */
+                border-top: 1px solid #444; /* Top border for separation */
+                font-size: 0.9rem; /* Font size for footer bottom text */
+            }
+
+
+            /* for hadding of page */
+            .menu-title h1 {
+                font-size: 48px;
+                font-weight: bold;
+                color: #ff69b4; /* Soft pink */
+                text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.2); /* Adding shadow for depth */
+                text-align: center;
+            }
+            
+            .menu-title span {
+                color: #32cd32; /* Soft green for age */
+            }
+            
